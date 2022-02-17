@@ -17,7 +17,7 @@ client.on('ready', async () => {
     new WOKCommands(client, {
         commandsDir: path.join(__dirname, 'commands'),
         typeScript: true,
-        testServers: ['679777315814637683'],
+        testServers: ['679777315814637683', '942491918867259472'],
         botOwners: []
     })
     console.log('Ready!');

@@ -24,7 +24,7 @@ export default {
         let cont = true;
 
         await scraper.get(url)
-        .then( // Once we have data returned ...
+        .then(
             response => {
                 const html = response.data;
                 const $ = cheerio.load(html);
@@ -72,7 +72,7 @@ export default {
                 })
             }
         )
-        .catch(console.error); // Error handling  
+        .catch(console.error);
 
         if (!cont) return;
 
